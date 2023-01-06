@@ -47,3 +47,8 @@ function handleSubmit(event) {
     $buttonMailto.setAttribute('href', `mailto:enzoprina9@gmail.com?subject=nombre ${form.get('name')} correo ${form.get('email')} body ${form.get('message') }`)
     $buttonMailto.click()
 }
+
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }

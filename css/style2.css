@@ -6,15 +6,27 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+
 }
 
-
+body {
+    background-color: white;
+}
 .container_all{
     position: relative;
     right: 0;
     transition: all 300ms;
 }
 
+.dark-mode {
+    background-color: #16161d;
+    color: white;
+  }
+
+
+.boton {
+    cursor: pointer;
+}
 
 header{
     width: 100%;
@@ -39,6 +51,7 @@ header{
     justify-content: space-between;
     margin: auto;
     padding: 0px 20px;
+
 }
 
 header .logo{
@@ -73,7 +86,7 @@ nav ul li{
     margin: 0px 20px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     font-size: 14px;
 }
@@ -86,7 +99,7 @@ nav ul li a{
 
 .nav_mod a{
     color: #373737;
-}
+} 
 
 .nav_mod .select{
     color: white;
@@ -110,10 +123,11 @@ nav ul li a{
     border-radius: 50%;
     transition: all 300ms;
     display: none;
+    color: white;
 }
 
 .btn__menu:hover{
-    background: #f5f5f5;
+    color: #359EF9;
 }
 
 /*COVER*/
@@ -243,8 +257,9 @@ nav ul li a{
 }
 
 .descarga {
-    padding: 10px 40px;
+    padding: 10px 20px;
     margin-top: 80px;
+    margin-bottom: 50px;
     font-size: 18px;
     font-weight: 600;
     border: none;
@@ -254,12 +269,8 @@ nav ul li a{
     box-shadow: 1px 1px 30px -5px #20202049;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-
     margin-left: 40%;
- 
-    width: 200px;
-    height: 40px;
-    border: none
+    align-items: center;
 }
 
 .cover input[type="button"]:hover{
@@ -311,8 +322,13 @@ nav ul li a{
     }
 
     nav{
+        box-shadow:
+            0px 0px 5.3px rgba(0, 0, 0, 0.085),
+            0px 0px 17.9px rgba(0, 0, 0, 0.125),
+            0px 0px 80px rgba(0, 0, 0, 0.21)
+;
         height: 100%;
-        background: #F1FAFF;
+        background: #2196f3;
         position: fixed;
         top: 0;
         right: -180px;
@@ -330,11 +346,15 @@ nav ul li a{
 
     nav ul li{
         margin: 20px 0px;
+        color: white;
     }
 
     .container__vector img{
         transform: scale(0);
         animation: none;
+    }
+    h3 {
+        color: #00315c;
     }
 
 }
@@ -445,7 +465,18 @@ nav ul li a{
     box-shadow: 1px 1px 30px -5px #20202070;
 }
 
+.proyectos2 {
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #E8B600;
+}
+
+
 .proyectos {
+    
     font-size: 50px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -602,11 +633,11 @@ nav ul li a{
 }
 
 .sobre-mi {
-    background-color: #fafafa;
+    background-color: #005daf;
     height: 500px;
-    width: min(60rem, 100% ); /**Utilizar el valor mas pequeno **/
+    width: 100% ;/* min(60rem, 100% ); */ /**Utilizar el valor mas pequeno **/
     margin: 70px auto 0;
-    padding: 16px;
+    padding-top: 50px;
     border-radius: 16px;
 }
 
@@ -615,6 +646,7 @@ nav ul li a{
     text-align: center;
     line-height: 1.8;
     margin-bottom: 20px;
+    color: white;
 }
 
 @media  (max-width: 700px) {
@@ -636,6 +668,8 @@ nav ul li a{
         border-radius: 20px;
         border: none
     }
+
+
  }
 
 .resaltado {
@@ -670,6 +704,7 @@ footer{
     max-width: 1200px;
     margin: auto;
     padding-top: 100px;
+    
 }
 
 .box__footer{
@@ -734,3 +769,9 @@ footer{
     opacity: 0;
 }
 
+.cardFoto {
+     width: 100px;
+}
+.ToDo{
+
+}
