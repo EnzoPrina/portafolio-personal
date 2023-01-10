@@ -35,7 +35,7 @@ window.addEventListener("resize", function(){
 
 });
 
-const $form = document.querySelector('#form')
+/* const $form = document.querySelector('#form')
 const $buttonMailto = document.querySelector('#trucazo')
 
 $form.addEventListener('submit', handleSubmit)
@@ -46,28 +46,28 @@ function handleSubmit(event) {
     const form = new FormData(this)
     $buttonMailto.setAttribute('href', `mailto:enzoprina9@gmail.com?subject=nombre ${form.get('name')} correo ${form.get('email')} body ${form.get('message') }`)
     $buttonMailto.click()
-}
+} */
 
 function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
   }
 
-  const $forms = document.querySelector('#form')
+  const $forms = document.querySelector('#forms')
   $forms.addEventListener('submit', handleSubmit)
 
   async function handleSubmit(event) {
     event.preventDefault()
-    const form = new FormData(this)
+    const forms = new FormData(this)
     const response = await fetch(this.action,{
         method: this.method,
-        body: form,
+        body: forms,
         headers: {
             'Accept': 'application/json'
         }
     })
     if(response.ok) {
         this.reset()
-        alert('Gracias por contactarme, te escribiré pronto')
+        alert('¡Gracias por Contactarme! te escribiré pronto :)')
     }
   }
